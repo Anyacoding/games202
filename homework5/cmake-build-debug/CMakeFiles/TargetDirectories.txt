@@ -1,0 +1,3 @@
+D:/games-lab/games202/homework5/cmake-build-debug/CMakeFiles/Denoise.dir
+D:/games-lab/games202/homework5/cmake-build-debug/CMakeFiles/edit_cache.dir
+D:/games-lab/games202/homework5/cmake-build-debug/CMakeFiles/rebuild_cache.dir

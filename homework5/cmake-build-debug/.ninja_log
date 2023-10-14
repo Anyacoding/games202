@@ -1,0 +1,10 @@
+# ninja log v5
+8	1023	7189734956491857	CMakeFiles/Denoise.dir/src/util/image.cpp.obj	13237259920e57fb
+11	3436	7189734980630850	CMakeFiles/Denoise.dir/src/denoiser.cpp.obj	61d8d51361d629e
+14	3652	7189734982764115	CMakeFiles/Denoise.dir/src/main.cpp.obj	166967363f46006f
+5	3817	7189734984354012	CMakeFiles/Denoise.dir/src/util/imageutil.cpp.obj	74fea64954a66437
+3	665	7189735742175594	CMakeFiles/Denoise.dir/src/util/mathutil.cpp.obj	adf559ed97627e92
+8	795	7189735743466466	CMakeFiles/Denoise.dir/src/util/image.cpp.obj	13237259920e57fb
+17	3445	7189735769966219	CMakeFiles/Denoise.dir/src/denoiser.cpp.obj	61d8d51361d629e
+12	3616	7189735771665810	CMakeFiles/Denoise.dir/src/main.cpp.obj	166967363f46006f
+3616	4308	7189735778534233	Denoise.exe	2c4b46516c202eb2

@@ -1,0 +1,32 @@
+[
+{
+  "directory": "D:/games-lab/games202/build",
+  "command": "D:\\mingw64\\bin\\g++.exe  @CMakeFiles/Denoise.dir/includes_CXX.rsp  -fopenmp -g -std=gnu++17 -o CMakeFiles\\Denoise.dir\\src\\denoiser.cpp.obj -c D:\\games-lab\\games202\\homework5\\src\\denoiser.cpp",
+  "file": "D:/games-lab/games202/homework5/src/denoiser.cpp",
+  "output": "CMakeFiles/Denoise.dir/src/denoiser.cpp.obj"
+},
+{
+  "directory": "D:/games-lab/games202/build",
+  "command": "D:\\mingw64\\bin\\g++.exe  @CMakeFiles/Denoise.dir/includes_CXX.rsp  -fopenmp -g -std=gnu++17 -o CMakeFiles\\Denoise.dir\\src\\main.cpp.obj -c D:\\games-lab\\games202\\homework5\\src\\main.cpp",
+  "file": "D:/games-lab/games202/homework5/src/main.cpp",
+  "output": "CMakeFiles/Denoise.dir/src/main.cpp.obj"
+},
+{
+  "directory": "D:/games-lab/games202/build",
+  "command": "D:\\mingw64\\bin\\g++.exe  @CMakeFiles/Denoise.dir/includes_CXX.rsp  -fopenmp -g -std=gnu++17 -o CMakeFiles\\Denoise.dir\\src\\util\\image.cpp.obj -c D:\\games-lab\\games202\\homework5\\src\\util\\image.cpp",
+  "file": "D:/games-lab/games202/homework5/src/util/image.cpp",
+  "output": "CMakeFiles/Denoise.dir/src/util/image.cpp.obj"
+},
+{
+  "directory": "D:/games-lab/games202/build",
+  "command": "D:\\mingw64\\bin\\g++.exe  @CMakeFiles/Denoise.dir/includes_CXX.rsp  -fopenmp -g -std=gnu++17 -o CMakeFiles\\Denoise.dir\\src\\util\\imageutil.cpp.obj -c D:\\games-lab\\games202\\homework5\\src\\util\\imageutil.cpp",
+  "file": "D:/games-lab/games202/homework5/src/util/imageutil.cpp",
+  "output": "CMakeFiles/Denoise.dir/src/util/imageutil.cpp.obj"
+},
+{
+  "directory": "D:/games-lab/games202/build",
+  "command": "D:\\mingw64\\bin\\g++.exe  @CMakeFiles/Denoise.dir/includes_CXX.rsp  -fopenmp -g -std=gnu++17 -o CMakeFiles\\Denoise.dir\\src\\util\\mathutil.cpp.obj -c D:\\games-lab\\games202\\homework5\\src\\util\\mathutil.cpp",
+  "file": "D:/games-lab/games202/homework5/src/util/mathutil.cpp",
+  "output": "CMakeFiles/Denoise.dir/src/util/mathutil.cpp.obj"
+}
+]
