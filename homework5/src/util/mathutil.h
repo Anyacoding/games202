@@ -14,23 +14,32 @@ inline float SafeAcos(const float &v) {
 class Float3 {
   public:
     enum EType { Vector, Point };
+
     Float3(const float &v = 0) : x(v), y(v), z(v) {}
+
     Float3(const float &_x, const float &_y, const float &_z) : x(_x), y(_y), z(_z) {}
+
     Float3 operator+(const Float3 &v) const { return Float3(x + v.x, y + v.y, z + v.z); }
+
     Float3 operator-(const Float3 &v) const { return Float3(x - v.x, y - v.y, z - v.z); }
+
     Float3 &operator+=(const Float3 &v) {
         x += v.x;
         y += v.y;
         z += v.z;
         return *this;
     }
+
     Float3 operator*(const float &v) const { return Float3(x * v, y * v, z * v); }
+
     Float3 operator*(const Float3 &v) const { return Float3(x * v.x, y * v.y, z * v.z); }
+
     Float3 operator/(const float &v) const {
         CHECK(v != 0.0);
         float inv = 1.0f / v;
         return Float3(x * inv, y * inv, z * inv);
     }
+
     Float3 operator/(const Float3 &v) const {
         CHECK(v.x != 0.0);
         CHECK(v.y != 0.0);
@@ -40,6 +49,7 @@ class Float3 {
         float invZ = 1.0f / v.z;
         return Float3(x * invX, y * invY, z * invZ);
     }
+
     Float3 &operator/=(const float &v) {
         CHECK(v != 0.0);
         float inv = 1.0f / v;
@@ -49,6 +59,7 @@ class Float3 {
         return *this;
     }
 
+public:
     float x, y, z;
 };
 
@@ -71,7 +82,9 @@ inline float AbsSum(const Float3 &a, const Float3 &b) {
 inline Float3 Abs(const Float3 &a) {
     return Float3(std::fabs(a.x), std::fabs(a.y), std::fabs(a.z));
 }
+
 inline Float3 Sqr(const Float3 &a) { return Float3(Sqr(a.x), Sqr(a.y), Sqr(a.z)); }
+
 inline Float3 SafeSqrt(const Float3 &a) {
     return Float3(SafeSqrt(a.x), SafeSqrt(a.y), SafeSqrt(a.z));
 }
@@ -80,20 +93,25 @@ inline Float3 SafeSqrt(const Float3 &a) {
 inline Float3 Lerp(const Float3 &u, const Float3 &v, const float &s) {
     return u + (v - u) * s;
 }
+
 inline Float3 Clamp(const Float3 &v, const Float3 &l, const Float3 &r) {
     return Min(Max(v, l), r);
 }
 
 inline float SqrLength(const Float3 &a) { return Sqr(a.x) + Sqr(a.y) + Sqr(a.z); }
+
 inline float Length(const Float3 &a) { return std::sqrt(Sqr(a.x) + Sqr(a.y) + Sqr(a.z)); }
+
 inline Float3 Normalize(const Float3 &a) { return a / Length(a); }
 
 inline float SqrDistance(const Float3 &a, const Float3 &b) { return SqrLength(a - b); }
+
 inline float Distance(const Float3 &a, const Float3 &b) { return Length(a - b); }
 
 inline float Luminance(const Float3 &rgb) {
     return Dot(rgb, Float3(0.2126f, 0.7152f, 0.0722f));
 }
+
 inline Float3 RGB2YCoCg(const Float3 &RGB) {
     float Co = RGB.x - RGB.z;
     float tmp = RGB.z + Co / 2;
@@ -101,6 +119,7 @@ inline Float3 RGB2YCoCg(const Float3 &RGB) {
     float Y = tmp + Cg / 2;
     return Float3(Y, Co, Cg);
 }
+
 inline Float3 YCoCg2RGB(const Float3 &YCoCg) {
     float tmp = YCoCg.x - YCoCg.z / 2;
     float G = YCoCg.z + tmp;

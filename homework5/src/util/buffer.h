@@ -43,10 +43,12 @@ class Buffer2D : public Buffer<T> {
 };
 
 template <typename T>
-inline Buffer2D<T>::Buffer2D() : Buffer<T>(nullptr, 0), m_width(0), m_height(0) {}
+inline
+Buffer2D<T>::Buffer2D() : Buffer<T>(nullptr, 0), m_width(0), m_height(0) {}
 
 template <typename T>
-inline Buffer2D<T>::Buffer2D(T *buffer, const int &width, const int &height)
+inline
+Buffer2D<T>::Buffer2D(T *buffer, const int &width, const int &height)
     : Buffer<T>(buffer, width * height), m_width(width), m_height(height) {}
 
 template <typename T>
@@ -57,13 +59,15 @@ inline void Buffer2D<T>::Copy(const Buffer2D<T> &buffer) {
 }
 
 template <typename T>
-inline T &Buffer2D<T>::operator()(const int &x, const int &y) {
+inline T&
+Buffer2D<T>::operator()(const int &x, const int &y) {
     CHECK(0 <= x && x < m_width && 0 <= y && y < m_height);
     return this->m_buffer[y * m_width + x];
 }
 
-template <typename T>
-inline T Buffer2D<T>::operator()(const int &x, const int &y) const {
+template<typename T>
+inline T
+Buffer2D<T>::operator()(const int &x, const int &y) const {
     if (0 <= x && x < m_width && 0 <= y && y < m_height) {
         return this->m_buffer[y * m_width + x];
     } else {
